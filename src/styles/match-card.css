@@ -1,0 +1,13 @@
+.match-card {
+	padding: 0 0 0 20px;
+}
+.match-card--header {
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+.match-card::after {
+	width: 20px;
+	background: white;
+}

@@ -1,0 +1,13 @@
+.ui-flex {
+	display: flex;
+}
+
+.ui-flex--direction_column {
+	flex-direction: column;
+}
+.ui-flex--direction_row {
+	flex-direction: row;
+}
+.ui-flex--wrap_wrap {
+	flex-wrap: wrap;
+}

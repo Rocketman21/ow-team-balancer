@@ -1,0 +1,45 @@
+.ui-table {
+	color: white;
+	text-shadow: 0.03rem 0.03rem 0 black;
+	text-transform: uppercase;
+	padding-bottom: 35px;
+	text-align: center;
+	font-weight: bold;
+}
+.ui-table--kind_large {
+	font-size: 20px;
+}
+.ui-table--kind_small {
+	font-size: 12px;
+	cursor: pointer;
+}
+.ui-table--kind_small thead {
+	font-size: 14px;
+	text-align: end;
+}
+.ui-table--display_reversed thead {
+	text-align: left;
+}
+
+.ui-table thead {
+	background: var(--tr-blue);
+}
+.ui-table thead th {
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+.ui-table tbody {
+	height: 100%;
+	overflow-y: auto;
+}
+.ui-table tbody td {
+	padding: 0.5em 1em 0.5em 1em;
+}
+.ui-table tbody tr {
+	background: var(--tr-lightblue);
+	transition: all 0.1s ease-in-out;
+}
+.ui-table tbody tr:hover {
+	background: var(--tr-blue);
+	outline-offset: -0.2em;
+}
