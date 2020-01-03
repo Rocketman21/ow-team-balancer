@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ow-team-balancer/static/css/main.ffc0b861.chunk.css",
+    "main.js": "/ow-team-balancer/static/js/main.cf436573.chunk.js",
+    "main.js.map": "/ow-team-balancer/static/js/main.cf436573.chunk.js.map",
+    "runtime-main.js": "/ow-team-balancer/static/js/runtime-main.5c802d31.js",
+    "runtime-main.js.map": "/ow-team-balancer/static/js/runtime-main.5c802d31.js.map",
+    "static/js/2.8cf800ed.chunk.js": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js",
+    "static/js/2.8cf800ed.chunk.js.map": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js.map",
+    "index.html": "/ow-team-balancer/index.html",
+    "precache-manifest.783792e26cc258bdea8b1a826a7ff826.js": "/ow-team-balancer/precache-manifest.783792e26cc258bdea8b1a826a7ff826.js",
+    "service-worker.js": "/ow-team-balancer/service-worker.js",
+    "static/css/main.ffc0b861.chunk.css.map": "/ow-team-balancer/static/css/main.ffc0b861.chunk.css.map",
+    "static/js/2.8cf800ed.chunk.js.LICENSE": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js.LICENSE",
+    "static/media/index.css": "/ow-team-balancer/static/media/background.2237e5c0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c802d31.js",
+    "static/js/2.8cf800ed.chunk.js",
+    "static/css/main.ffc0b861.chunk.css",
+    "static/js/main.cf436573.chunk.js"
+  ]
+}
