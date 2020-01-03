@@ -52,14 +52,16 @@ const PlayersTable = ({playersList}: {playersList: Player[]}) => {
 
 	return (
 		<div>
-			{/* <form>
-				<Flex justifyContent="space-between">
-					<TextInput width={100} onChange={handleInput} placeholder="" />
-					<TextInput width={100} onChange={handleInput} placeholder="" />
-					<TextInput width={100} onChange={handleInput} placeholder="" />
-				</Flex>
-				<button type="submit" onClick={handleSubmit}>Добавить</button>
-			</form> */}
+			{false &&
+        <form>
+          <Flex justifyContent="space-between">
+            <TextInput width={100} onChange={handleInput} placeholder="" />
+            <TextInput width={100} onChange={handleInput} placeholder="" />
+            <TextInput width={100} onChange={handleInput} placeholder="" />
+          </Flex>
+          <button type="submit" onClick={handleSubmit}>Добавить</button>
+        </form>
+      }
 			<Table players={players} width={460} height="75vh" hasPointsColumn />
 		</div>
 	);
