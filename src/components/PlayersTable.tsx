@@ -62,7 +62,7 @@ const PlayersTable = ({playersList}: {playersList: Player[]}) => {
           <button type="submit" onClick={handleSubmit}>Добавить</button>
         </form>
       }
-			<Table players={players} width={460} height="75vh" hasPointsColumn />
+			<Table players={players} width={430} height="75vh" hasPointsColumn />
 		</div>
 	);
 };

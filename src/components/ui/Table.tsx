@@ -63,11 +63,11 @@ const Table = ({players, height, width, hasPointsColumn, isRevesed, isSmall}: Pr
 				<td>{player.battletag}</td>
 				{hasPointsColumn && <td>{player.points}</td>}
 			</>,
-			<td style={zeroPadding}><OwIcon kind={getLeagueIconKind(player.points)} width={30} /></td>
+			<td style={isSmall ? zeroPadding : {padding: '3px 5px 0 5px'}}><OwIcon kind={getLeagueIconKind(player.points)} width={30} /></td>
 		];
 
 		return isRevesed ? cols.reverse() : cols;
-	}, [hasPointsColumn, isRevesed]);
+	}, [hasPointsColumn, isRevesed, isSmall]);
 
 	return (
 		<div className={className} style={style}>
