@@ -58,7 +58,7 @@ const Table = ({players, height, width, hasPointsColumn, isRevesed, isSmall}: Pr
 
 	const getBodyColumns = useCallback((player: Player) => {
 		const cols = [
-			<td style={zeroPadding}><OwIcon kind="offense" width={20} /></td>,
+			<td style={zeroPadding}><OwIcon kind={player.role} width={20} /></td>,
 			<>
 				<td>{player.battletag}</td>
 				{hasPointsColumn && <td>{player.points}</td>}
