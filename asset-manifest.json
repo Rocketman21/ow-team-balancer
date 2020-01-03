@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ow-team-balancer/static/css/main.865a9109.chunk.css",
-    "main.js": "/ow-team-balancer/static/js/main.a171ab72.chunk.js",
-    "main.js.map": "/ow-team-balancer/static/js/main.a171ab72.chunk.js.map",
+    "main.js": "/ow-team-balancer/static/js/main.d93db04c.chunk.js",
+    "main.js.map": "/ow-team-balancer/static/js/main.d93db04c.chunk.js.map",
     "runtime-main.js": "/ow-team-balancer/static/js/runtime-main.5c802d31.js",
     "runtime-main.js.map": "/ow-team-balancer/static/js/runtime-main.5c802d31.js.map",
     "static/js/2.8cf800ed.chunk.js": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js",
     "static/js/2.8cf800ed.chunk.js.map": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js.map",
     "index.html": "/ow-team-balancer/index.html",
-    "precache-manifest.4b610669a2c5ca6e78b93d3f62e7651a.js": "/ow-team-balancer/precache-manifest.4b610669a2c5ca6e78b93d3f62e7651a.js",
+    "precache-manifest.ebc0c18def22a4b66c4fb790689dbd8f.js": "/ow-team-balancer/precache-manifest.ebc0c18def22a4b66c4fb790689dbd8f.js",
     "service-worker.js": "/ow-team-balancer/service-worker.js",
     "static/css/main.865a9109.chunk.css.map": "/ow-team-balancer/static/css/main.865a9109.chunk.css.map",
     "static/js/2.8cf800ed.chunk.js.LICENSE": "/ow-team-balancer/static/js/2.8cf800ed.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5c802d31.js",
     "static/js/2.8cf800ed.chunk.js",
     "static/css/main.865a9109.chunk.css",
-    "static/js/main.a171ab72.chunk.js"
+    "static/js/main.d93db04c.chunk.js"
   ]
 }
