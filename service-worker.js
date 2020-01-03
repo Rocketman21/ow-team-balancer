@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ow-team-balancer/precache-manifest.ebc0c18def22a4b66c4fb790689dbd8f.js"
+  "/ow-team-balancer/precache-manifest.55916421aba93d365363f3381bf73eb0.js"
 );
 
 self.addEventListener('message', (event) => {
