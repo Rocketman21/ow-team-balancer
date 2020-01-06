@@ -1,6 +1,6 @@
-import React, { useMemo, useCallback } from 'react';
-import '../../styles/Table.css';
-import OwIcon from './OwIcon';
+import React, { useMemo, useCallback, Fragment } from 'react';
+import '../styles/Table.css';
+import OwIcon from './ui/OwIcon';
 import cn from 'classnames';
 import { Player, League } from 'types';
 import { getPlayersAverageScore } from 'helpers';
@@ -40,17 +40,14 @@ const Table = ({players, height, width, hasPointsColumn, isRevesed, isSmall}: Pr
 	const headerColumns = useMemo(() => {
 		const points = getPlayersAverageScore(players);
 		const cols = [
-			<th></th>,
-			<>
+			<th key="hcol1"></th>,
+			<Fragment key="hcol2">
 				<th style={{width: '8em'}}>
-					{isSmall
-						? points
-						: 'battletag'
-					}
+					{isSmall ? points : 'battletag'}
 				</th>
 				{hasPointsColumn && <th>Points</th>}
-			</>,
-			<th style={zeroPadding}>{isSmall && <OwIcon kind={getLeagueIconKind(points)} width={30} />}</th>
+			</Fragment>,
+			<th key="hcol3" style={zeroPadding}>{isSmall && <OwIcon kind={getLeagueIconKind(points)} width={30} />}</th>
 		];
 
 		return isRevesed ? cols.reverse() : cols;
@@ -58,12 +55,12 @@ const Table = ({players, height, width, hasPointsColumn, isRevesed, isSmall}: Pr
 
 	const getBodyColumns = useCallback((player: Player) => {
 		const cols = [
-			<td style={zeroPadding}><OwIcon kind={player.role} width={20} /></td>,
-			<>
+			<td key="bcol1" style={zeroPadding}><OwIcon kind={player.role} width={20} /></td>,
+			<Fragment key="bcol2">
 				<td>{player.battletag}</td>
 				{hasPointsColumn && <td>{player.points}</td>}
-			</>,
-			<td style={isSmall ? zeroPadding : {padding: '3px 5px 0 5px'}}><OwIcon kind={getLeagueIconKind(player.points)} width={30} /></td>
+			</Fragment>,
+			<td key="bcol3" style={isSmall ? zeroPadding : {padding: '3px 5px 0 5px'}}><OwIcon kind={getLeagueIconKind(player.points)} width={30} /></td>
 		];
 
 		return isRevesed ? cols.reverse() : cols;
@@ -77,7 +74,7 @@ const Table = ({players, height, width, hasPointsColumn, isRevesed, isSmall}: Pr
 				</thead>
 				<tbody className="table-body">
 					{players.map(player => (
-						<tr>{getBodyColumns(player)}</tr>
+						<tr key={player.id}>{getBodyColumns(player)}</tr>
 					))}
 				</tbody>
 			</table>

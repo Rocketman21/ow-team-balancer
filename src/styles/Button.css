@@ -1,0 +1,23 @@
+.ui-button {
+	height: 40px;
+	background: var(--tr-lightblue);
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0 0.7em 0 0.7em;
+	text-transform: uppercase;
+}
+.ui-button:focus {
+	box-shadow: inset 0 0 0 3px var(--gray);
+	outline: none;
+}
+.ui-button:hover {
+	opacity: var(--hover-opacity);
+}
+
+.ui-button_primary {
+	background: var(--tr-green);
+}

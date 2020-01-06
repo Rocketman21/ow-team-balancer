@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from './ui/Table';
+import Table from './Table';
 import Flex from './ui/Flex';
 import '../styles/match-card.css';
 import { Match } from 'types';

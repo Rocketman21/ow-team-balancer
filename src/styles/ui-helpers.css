@@ -11,8 +11,10 @@ body {
 	--blue: rgb(104, 104, 255);
 	--tr-lightblue: rgba(160, 160, 248, 0.5);
 	--tr-blue: rgba(104, 104, 255, 0.5);
-}
+	--gray: rgb(200, 200, 200);
+	--tr-green: rgba(0, 255, 0, 0.5);
 
-.abc {
-	overflow-y: auto;
+	--transition100: all 0.1s ease-in-out;
+	--outline: solid 3px var(--gray);
+	--hover-opacity: 0.8;
 }

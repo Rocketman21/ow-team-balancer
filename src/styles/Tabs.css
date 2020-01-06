@@ -1,0 +1,26 @@
+.ui-tabs {
+	border-bottom: 3px solid var(--tr-blue);
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+.ui-tabs-btn {
+	height: 40px;
+	background: var(--tr-lightblue);
+	border: 2px solid transparent;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 2px;
+	transform: skewX(-10deg);
+	cursor: pointer;
+}
+.ui-tabs-btn:hover {
+	opacity: 0.8;
+}
+.ui-tabs-btn:focus {
+	outline: var(--outline);
+}
+.ui-tabs-btn_active {
+	background: var(--tr-blue);
+}
