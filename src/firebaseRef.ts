@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyAZqUUv1gkGq0ZaxZlpT4dB634pZqnhMgg',
+	apiKey: 'AIzaSyAZqUUv1gkGq0ZaxZlpT4dB634pZqnhMgg',
 	authDomain: 'ow-balancer-api.firebaseapp.com',
 	projectId: 'ow-balancer-api'
 });

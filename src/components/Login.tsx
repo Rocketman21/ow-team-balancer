@@ -29,7 +29,9 @@ const Login = () => {
 	}
 
 	return (
-		<Button isPrimary={!isLoggedIn} onClick={handleLoginClick}>{isLoggedIn ? 'Logout' : 'Login'}</Button>
+		<Button isPrimary={!isLoggedIn} onClick={handleLoginClick}>
+			{isLoggedIn ? 'Logout' : 'Login'}
+		</Button>
 	);
 };
 

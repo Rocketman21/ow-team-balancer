@@ -1,8 +1,8 @@
 export interface Player {
-  id: string;
-  battletag: string;
-  points: number;
-  role: 'offense' | 'tank' | 'support';
+	id: string;
+	battletag: string;
+	points: number;
+	role: 'offense' | 'tank' | 'support';
 }
 export type Team = Player[];
 export type Match = Team[];
@@ -10,7 +10,7 @@ export type League = 'offense' | 'support' | 'tank' | 'bronze' | 'silver' | 'gol
 export type ScoreDifferences = Array<{player: Player, difference: number}>;
 
 export interface Access {
-  players: {
-    write?: boolean;
-  }
+	players: {
+		write?: boolean;
+	}
 }

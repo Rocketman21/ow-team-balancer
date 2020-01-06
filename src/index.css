@@ -1,29 +1,29 @@
 body {
-  margin: 0;
-  height: 100vh;
-  background: url('./background.jpg') center no-repeat / cover fixed;
-  overflow: hidden;
+	margin: 0;
+	height: 100vh;
+	background: url('./background.jpg') center no-repeat / cover fixed;
+	overflow: hidden;
 }
 body, input {
-  font-family: 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto', sans-serif, -apple-system, BlinkMacSystemFont;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+	width: 12px;  /* for vertical scrollbars */
+	height: 12px; /* for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--tr-blue);
+	background: var(--tr-blue);
 }

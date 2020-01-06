@@ -10,29 +10,29 @@ import { Player } from 'types';
 import Login from 'components/Login';
 
 const App = () => {
-  const randomPlayers = Array
+	const randomPlayers = Array
 	.from({length: 500})
 	.map((_, index) => ({
-    id: index.toString(),
+		id: index.toString(),
 		role: ['offense', 'tank', 'support'][getRandomInt(3)] as Player["role"],
-    points: getRandomInt(5000),
-    battletag: `Tester#${getRandomInt(9999)}`
+		points: getRandomInt(5000),
+		battletag: `Tester#${getRandomInt(9999)}`
 	}));
-  const matches = getBalancedMatches(randomPlayers);
+	const matches = getBalancedMatches(randomPlayers);
 
-  return (
-    <Flex className="App" direction="column">
-      <Flex justifyContent="flex-end" indent="large">
-        <Login />
-      </Flex>
-      <Flex indent="large">
-        <PlayerList playersList={randomPlayers} />
-        <Flex className="match-table" height="85vh" wrap="wrap">
-          {matches.map((match, index) => <MatchCard key={index} match={match} number={index + 1} />)}
-        </Flex>
-      </Flex>
-    </Flex>
-  );
+	return (
+		<Flex className="App" direction="column">
+			<Flex justifyContent="flex-end" indent="large">
+				<Login />
+			</Flex>
+			<Flex indent="large">
+				<PlayerList playersList={randomPlayers} />
+				<Flex className="match-table" height="85vh" wrap="wrap">
+					{matches.map((match, index) => <MatchCard key={index} match={match} number={index + 1} />)}
+				</Flex>
+			</Flex>
+		</Flex>
+	);
 }
 
 export default App;
